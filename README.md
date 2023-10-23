@@ -25,7 +25,9 @@ For the analysis of the mitogenome of the Tyto species we will work on a iMac th
 
 Open a terminal and use "ssh" (secure shell) to access the iMac remotely:
 
-`ssh username@pcdee4323.unil.ch`
+`
+ssh username@pcdee4323.unil.ch
+`
 
 a password will be asked. Type your password, even if it seems like you're not typing anything, you are indeed entering your password, so once you finish typing your password just press ENTER.
 
