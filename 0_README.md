@@ -64,10 +64,10 @@ In short:
 1. Raw reads (sequences) are mapped to the reference mitogenome of Tyto alba
 2. Variants of each samples are identified and a mitogenome consensus per samples is built using the reference mitogenome and the variants information specific to each sample.
 3. Rename each sequence in the header.
-4. Identify the first and last gene present in the coding region of each mito-consensus (using MITOS)
+4. Identify the first and last gene present in the coding region of each mito-consensus (using [MITOS](https://pubmed.ncbi.nlm.nih.gov/22982435/))
 5. Repetitive elements present in the consensus mitogenomes should be removed
-6. An alignment of all mito-consensus is generated (using MATTF)
-7. We will build a phylogenetic tree using maximum likelihood, thus we will used RAxML
+6. An alignment of all mito-consensus is generated (using [MATTF](https://mafft.cbrc.jp/alignment/software/))
+7. We will build a phylogenetic tree using maximum likelihood, thus we will used [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/)
 
 Be aware that steps 1, 2 and 3 were already done for you! So you already have the mitoconsensus per sample in the `2_MitoConsensus` folder
 
