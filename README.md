@@ -58,7 +58,7 @@ More detailed information about the data folders in the [Data_folders_README](Da
 
 ### The PIPELINE
 
-In order to buld a phylogenetic tree (our goal) a series of steps processing our mitogenomic data need to be follow. These steps are called the PIPELINE. In the course of running the pipeline new output files will be generated that is stored in their corresponding folders (the Data folders). The ` 0_README_MitoConsensus` file explain our pipeline. 
+In order to buld a phylogenetic tree (our goal) a series of steps processing our mitogenomic data need to be follow. These steps are called the PIPELINE. In the course of running the pipeline new output files will be generated that is stored in their corresponding folders (the Data folders). The `0_README_MitoConsensus` file explain our pipeline. 
 
 In short: 
 1. Raw reads (sequences) are mapped to the reference mitogenome of Tyto alba
@@ -68,5 +68,7 @@ In short:
 5. Repetitive elements present in the consensus mitogenomes should be removed
 6. An alignment of all mito-consensus is generated (using MATTF)
 7. We will build a phylogenetic tree using maximum likelihood, thus we will used RAxML
-    
+
+Be aware that steps 1, 2 and 3 were already done for you! So you already have the mitoconsensus per sample in the `2_MitoConsensus` folder
+
 ###
