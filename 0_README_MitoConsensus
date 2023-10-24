@@ -1,0 +1,17 @@
+# 1. map the reads
+
+awk '{print "sbatch 1_AlignMito.slurm "$0}' 1_AlignMito.param | bash
+
+# 2. get the consensus 
+
+awk '{print "sbatch 2_ExtractMito.slurm "$2}' 1_AlignMito.param | bash
+
+# 3. rename each sequence in the header 
+
+for File in 2_MitoConsensus/*.fasta; do
+echo $File
+Name=`basename -s "_FullMito.fasta" $File`
+echo ">"${Name} > 2_MitoConsensus/${Name}_FullMitoRenamed.fasta
+tail -n +2 $File >> 2_MitoConsensus/${Name}_FullMitoRenamed.fasta
+done
+
