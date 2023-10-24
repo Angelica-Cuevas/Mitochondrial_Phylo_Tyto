@@ -58,7 +58,7 @@ More detailed information about the data folders in the [Data_folders_README](Da
 
 ### The PIPELINE
 
-In order to buld a phylogenetic tree (our goal) a series of steps processing our mitogenomic data need to be follow. These steps are called the PIPELINE. In the course of running the pipeline new output files will be generated that is stored in their corresponding folders (the Data folders). The [`0_README_MitoConsensus`](0_README_MitoConsensus) file explain our pipeline. 
+In order to buld a phylogenetic tree (our goal) a series of steps processing our mitogenomic data need to be follow. These steps are called the PIPELINE. In the course of running the pipeline new output files will be generated that is stored in their corresponding folders (the Data folders). The [`0_README_Mito_Pipeline`](0_README_Mito_Pipeline) file explains our pipeline. 
 
 In short: 
 1. Raw reads (sequences) are mapped to the reference mitogenome of Tyto alba
