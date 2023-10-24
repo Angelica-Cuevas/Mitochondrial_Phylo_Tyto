@@ -55,4 +55,18 @@ The mithocondrial sequencing data is located in the following directory
 you can work and produce your results in this or your home directory. It's up to you.
 
 More detailed information about the data folders in the [Data_folders_README](Data_folders.md)
-### 
+
+### The PIPELINE
+
+In order to buld a phylogenetic tree (our goal) a series of steps processing our mitogenomic data need to be follow. These steps are called the PIPELINE. In the course of running the pipeline new output files will be generated that is stored in their corresponding folders (the Data folders). The ` 0_README_MitoConsensus` file explain our pipeline. 
+
+In short: 
+-  Raw reads (sequences) are mapped to the reference mitogenome of Tyto alba
+-  Variants of each samples are identified
+-  A mitogenome consensus per samples is built using the reference mitogenome and the variants information specific to each sample
+-  Identify the first and last gene present in the coding region of each mito-consensus
+-  Repetitive elements present in the consensus mitogenomes should be removed 
+-  An alignment of all mito-consensus is generated using MATTF
+-  We will build a phylogenetic tree using maximum likelihood, thus we will used RAxML
+    
+###
