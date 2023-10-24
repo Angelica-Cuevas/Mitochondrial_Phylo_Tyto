@@ -67,7 +67,8 @@ In short:
 4. Identify the first and last gene present in the coding region of each mito-consensus (using [MITOS](https://pubmed.ncbi.nlm.nih.gov/22982435/))
 5. Repetitive elements present in the consensus mitogenomes should be removed
 6. An alignment of all mito-consensus is generated (using [MATTF](https://mafft.cbrc.jp/alignment/software/))
-7. We will build a phylogenetic tree using maximum likelihood, thus we will used [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/)
+   You can visualize your alignment using [MESQUITE](https://www.mesquiteproject.org/Align.html). Download the application in your own machine and export the alignment (output file from MATTF) to your computer with `scp`.
+8. We will build a phylogenetic tree using maximum likelihood, thus we will used [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/)
 
 Be aware that steps 1, 2 and 3 were already done for you! So you already have the mitoconsensus per sample in the `2_MitoConsensus` folder
 
