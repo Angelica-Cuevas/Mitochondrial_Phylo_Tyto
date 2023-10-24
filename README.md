@@ -15,10 +15,12 @@ Go to http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html to donwloa
 
 
 ### An easy Unix tutorial if you're not very familiar with the command-line
-Last year I, together with other members of the evomics workshop, developed a easy to follow introduction to Unix ([here](https://evomics.org/learning/population-and-speciation-genomics/2022-population-and-speciation-genomics/unix-primer/)). It is ideal that you follow this tutorial if you're not familiar with unix and the command-line. Since we will mostly work in the command-line it is important that you become familiar with the basics of unix. 
+Last year I, together with other members of the evomics workshop, developed a easy to follow introduction to Unix ([here](https://evomics.org/learning/population-and-speciation-genomics/2022-population-and-speciation-genomics/unix-primer/)). It is ideal that you follow this tutorial if you're not familiar with unix and the command-line. Since we will mostly work in the command-line it is important that you become familiar with the basics of unix and scripting. 
 
-Here another very nice introduction-to-scripting tutorial I will recomend you to go through:
-https://astrobiomike.github.io/unix/scripting
+Here another very nice unix tutorial: https://astrobiomike.github.io/unix/unix-intro
+After following these unix tutorials I'm sure you're more familiar with working in the command-line and in general with unix. Now you need to start learning a bit more about scriptting, which basically is just putting a series of commands into an executable file, a script, so you can run your analyses just by executing a script instead of running them one by one in the terminal window.
+
+I recomend you to go through this scripting tutorial, it's a nice introduction and it will definitely help you when you have to build your own scripts: https://astrobiomike.github.io/unix/scripting
 
 ### How to access the iMAC remotely
 For the analysis of the mitogenome of the Tyto species we will work on a iMac that is located on one of our offices. But as mentioned before we will also access it remotely (as if we were to access a HPC cluster)
@@ -51,10 +53,6 @@ The mithocondrial sequencing data is located in the following directory
 /Users/Shared/MitoGenome_museum/
 ```
 you can work and produce your results in this or your home directory. It's up to you.
-
-
-
-
 
 
 ### 
