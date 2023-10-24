@@ -54,7 +54,7 @@ The mithocondrial sequencing data is located in the following directory
 ```
 you can work and produce your results in this or your home directory. It's up to you.
 
-More detailed information about the data folders in the [Data_folders_README](Data_folders.md)
+More detailed information about the data folders in the [0_README_Data_folders.md](0_README_Data_folders.md)
 
 ### The PIPELINE
 
