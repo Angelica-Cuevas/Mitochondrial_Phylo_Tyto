@@ -6,7 +6,7 @@ All mitogenomic data for the different species of tyto can be found in
 /Users/Shared/MitoGenome_museum
 ```
 
-Here you will find files with the `*.slurm` extension, files with `*param` and folders. All `.slurm` files are scripts. Scripts are a series of commands that tell specific programs what to execute in the data. [Here](https://astrobiomike.github.io/unix/scripting#our-first-script) is again the tutorial to scripting. It will definitely help you to understand our scripts, but more importantly you will learn how to build your own scripts.
+Here you will find files with the `*.slurm` extension, files with `*param` and folders. All `.slurm` files are scripts. Scripts are a series of commands that tell specific programs what to execute in the data. [Here](https://astrobiomike.github.io/unix/scripting) is again the tutorial to scripting. It will definitely help you to understand our scripts, but more importantly you will learn how to build your own scripts.
 Ok, back to the files and folders. The files ending in `.param` are usually list, of our samples for example, that are used by the scripts to know which samples files it needs to look for to run the commands.
 
 In the `/Users/Shared/MitoGenome_museum` folder you can also find a `0_README_MitoConsensus` file, that you can also find in this repository. This file is the explanation of the pipeline (steps) we are going to follow to analyse our data.
