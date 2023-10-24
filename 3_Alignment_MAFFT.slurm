@@ -32,7 +32,7 @@ previous_align=/cluster/work/users/angelimc/Bryozoa/project1_mitogenomes_ribosom
 List=/cluster/work/users/angelimc/Bryozoa/Scripts
 
 ##*******************************************##
-## 13 protein-coding genes - AminoAcid format
+## protein-coding genes - nucleotide format
 ##*******************************************##
 for gene in $(cat ${List}/genes_published.txt) ; do
 
@@ -52,12 +52,3 @@ done
 # It tends to insert more gaps into gap-rich regions than previous versions.
 # To disable this change, add the --leavegappyregion option.
 
-
-##********************************##
-# 4 rRNA genes - Nucleotide format
-##********************************##
-for gene in $(cat ${List}/4_genes_rRNA.txt) ; do
-
-mafft --auto --add ${INPUT}/Nucleotide/${gene}_all_Samples_copy.fasta --reorder ${previous_align}/${gene}.fas > ${OUTPUT}/${gene}_added.samples_alignment.fas
-
-done
