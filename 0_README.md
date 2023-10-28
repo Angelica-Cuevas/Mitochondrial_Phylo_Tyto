@@ -68,7 +68,8 @@ In short:
 5. Repetitive elements present in the consensus mitogenomes should be removed
 6. An alignment of all mito-consensus is generated (using [MATTF](https://mafft.cbrc.jp/alignment/software/))
    You can visualize your alignment using [MESQUITE](https://www.mesquiteproject.org/Align.html). Download the application in your own machine and export the alignment (output file from MATTF) to your computer using `scp`.
-8. We will build a phylogenetic tree using maximum likelihood, thus we will used [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/)
+7. We will build a phylogenetic tree using maximum likelihood, thus we will used [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/)
+8. You can vizualise your tree using [TREEVIEWER](https://treeviewer.org). Download the app in your machine from: https://treeviewer.org. Here their [GitHub](https://github.com/arklumpus/TreeViewer) and some [examples](https://github.com/arklumpus/TreeViewer/wiki/Workload-examples)
 
 Be aware that steps 1, 2 and 3 were already done for you! So you already have the mitoconsensus per sample in the `2_MitoConsensus` folder
 
