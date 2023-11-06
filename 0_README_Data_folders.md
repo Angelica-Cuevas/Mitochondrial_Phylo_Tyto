@@ -17,6 +17,8 @@ for now we have the following folders:
 - 0_DATA
 - 1_Map
 - 2_MitoConsensus
+- 3_MITOS_annotation
+- 4_Alignment_MAFFT
 
 But while you follow the pipeline and run more analyses new folders will be generated. For now:
 
@@ -26,3 +28,8 @@ In `1_Map` there are the `*.bam` files and their indexes. `*.bam` are generated 
 
 In `2_MitoConsensus`, as the name hints this folder contains the mitogenomic consensus. After mapping the reads of each sample to the reference mitogenome, we identify variants (those positions where each sample (species) differentiate from the reference. After that, using the variants information, a consensus per sample is built, which correspond to the mitogenome of each of our samples.
 The final consensus files are those ending in `*_FullMitoRenamed.fasta`
+
+In `3_MITOS_annotation` you find the results of the annotation made by the software MITOS. Use this information to either extract specific genes and create gene-trees or to remove the repetitive elements. Follow the Tyto alba mitogenome manuscript to identify the first and last gene and remove the repeats before running a phylogeny.
+
+In `4_Alignment_MAFFT` you should save your alignments here
+
