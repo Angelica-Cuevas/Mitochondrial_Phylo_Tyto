@@ -1,6 +1,8 @@
 ## 1. map the reads
 
+``
 awk '{print "sbatch 1_AlignMito.slurm "$0}' 1_AlignMito.param | bash
+``
 
 ## 2. get the consensus 
 
