@@ -7,7 +7,7 @@ awk '{print "sbatch 1_AlignMito.slurm "$0}' 1_AlignMito.param | bash
 ### 1.1 Calculate the coverage and mean depth using samtools
 
 #### DEPTH
-Please see the samtools [documentation]() of samtools to understand which tools we are using here. 
+Please see the samtools [documentation](http://www.htslib.org/doc/samtools.html) of samtools to understand which tools we are using here. 
 
 To get the mean depth in each position you can ``samtools depth`` which will give you the depth per site (in column 3), but you need to average that across the whole mitogenome as and you can also calculate the standard deviation:
 
