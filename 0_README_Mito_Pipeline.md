@@ -11,13 +11,14 @@ Please see the samtools [documentation]() of samtools to understand which tools 
 
 To get the mean depth in each position you can ``samtools depth`` which will give you the depth per site (in column 3), but you need to average that across the whole mitogenome as and you can also calculate the standard deviation:
 
-``samtools depth -a mybamfile.bam  |  awk '{sum+=$3; sumsq+=$3*$3} END { print "Average = ",sum/NR; print "Stdev = ",sqrt(sumsq/NR - (sum/NR)**2)}'``
+``
+samtools depth -a mybamfile.bam  |  awk '{sum+=$3; sumsq+=$3*$3} END { print "Average = ",sum/NR; print "Stdev = ",sqrt(sumsq/NR - (sum/NR)**2)}'
+``
 
 Here NR will be the total number of sites. However, the calculation should be done by dividing over the the extact number of sites present in the reference genome we used (Tyto alba mitogenome). That infomation is also within the bamfile of each individual and you can get it using:
 
 ``
 samtools view -H mybamfile.bam | grep -P '^@SQ' | cut -f 3 -d ':' | awk '{sum+=$1} END {print sum}'
-
 ``
 You should have gotten "17092" base pair in for all bamfiles. Thus replace NR in the calculation of the depth (the ``samtools depth`` line above) to get an accurate estimate of the depth.
 
