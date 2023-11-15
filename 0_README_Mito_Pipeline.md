@@ -44,13 +44,14 @@ done
 
 ## 4. Identify the first and last gene present in the coding region of each mito-consensus (using MITOS)
 
-run the 3_Mitos_annotation.slurm script as:
+As MITOS is not develop tobe used in an iMAC, the IT department helped us to create a docker where we could installed the software.
+I wrote a script called `3_Mitos_annotation.sh` that allow you access MITOS and run it from your iMAC terminal (as always using a remote access from you own machine).
+Right now the script only works for a single sample. Modify it to run a few (a subset of) samples, so you ger familiar with how mitos run and the output youi ger from annotating the mito-genome.
+
+run the 3_Mitos_annotation.sh script as:
 ``
-    for i in $(cat 1_samples_list.param); do
-    sbatch 3_Mitos_annotation.slurm ${i}
-    done
+    bash 3_Mitos_annotation.sh 
 ``
-where 1_samples_list.param is the list of samples.
 
 ## 5. Repetitive elements present in the consensus mitogenomes should be removed
 You need to index the mitoconsensus fasta file using samtools as:
